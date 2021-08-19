@@ -1,14 +1,31 @@
+@media screen and (max-width: 768px){
+ .menu__divisor{
+     visibility: hidden;
+ }
+ .flexVideos {
+    display: flex; height: 500px;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+}
+}
+    
+
 @mixin tablet {
-    @media screen and (max-width:768px){
+    @media screen and (min-width:1024px){
         .inicio__container{
             grid-template-columns:repeat(4,$col);
         }
-        .flexVideos {
-            display: flex; height: 500px;
-            flex-flow: row wrap; 
-            justify-content: space-between;
+        
+        .menu__divisor{
+            height: $margen-min/2 !important;width: $ancho-menu;
+            background: #ffffff;
+            background: -moz-radial-gradient(circle, $blanco 0%, rgba(100, 100, 100, 1) 0%, $blanco  100%);
+            background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+            background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
         }
     }
 }
+
 
 

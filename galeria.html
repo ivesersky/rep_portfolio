@@ -55,71 +55,26 @@
       </nav>
         <hr class="menu__divisor  animate__animated animate__slideInLeft animate__slow">
     </header>
-
-    <div class="container carousel ">
-        <div class="row  animate__animated animate__fadeInRight animate__slow ">
-            <div class="col-md-4 mt-4 ">
-                <div id="carouselIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                    <div class="carousel-indicators align-items-center ">
-                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner round-borders " >
-                      <div class="carousel-item col-md-6  active " data-mdb-interval="2000">
-                        <img src="./img/galeria/expo5.jpg" class="d-block w-100 img-fluid " alt="blanco y negro">
-                        <div class="carousel-caption d-none d-md-block carousel__bgr carousel__bgr--light">
-                            <h5 class="carousel__title">B&W 35mm</h5>
-                            <figcaption>IlfordPan 100</figcaption>
-                        </div>
-                      </div>
-                      <div class="carousel-item col-md-6" data-mdb-interval="2000">
-                        <img src="./img/galeria/respuesta6.jpg" class="d-block w-100 img-fluid" alt="ventana amarilla">
-                        <div class="carousel-caption d-none d-md-block carousel__bgr">
-                            <h5 class="carousel__title">Mamiya Sekor</h5>
-                            <figcaption>Kodak Color Plus 400</figcaption>
-                        </div>
-                      </div>
-                      <div class="carousel-item col-md-6"  data-mdb-interval="2000">
-                        <img src="./img/galeria/expo6.jpg" class="d-block w-100 img-fluid " alt="">
-                        <div class="carousel-caption d-none d-md-block carousel__bgr carousel__bgr--light">
-                            <h5 class="carousel__title">Minolta xg9</h5>
-                            <figcaption>Kodak Proimage 100</figcaption>
-                        </div>
-                      </div>
-                      <div class="carousel-item col-md-6"  data-mdb-interval="2000">
-                        <img src="./img/galeria/caraCinta.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block carousel__bgr carousel__bgr--light">
-                            <h5 class="carousel__title">Minolta xg9</h5>
-                            <figcaption>Kodak Proimage 200</figcaption>
-                        </div>
-                      </div>
-                    </div>
-                    <!--boton slide izq-->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <!--boton slide derecha-->
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-    
-            </div>     
-        </div>
+<div class="card-columns">
+  <div class="card round-borders" style="width: 20rem;">
+    <img class="card-img-top" src="./img/galeria/caraCinta.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-dark">Go somewhere</a>
     </div>
-
-    <div class="card round-borders" style="width: 20rem;">
-      <img class="card-img-top" src="./img/galeria/caraCinta.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-dark">Go somewhere</a>
-      </div>
-    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+</div>
     
             <!--FOOTER-->
            <footer class="pie">

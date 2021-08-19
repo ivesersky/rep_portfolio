@@ -1,16 +1,22 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
  .menu__divisor{
      visibility: hidden;
  }
+ .card{
+     display: none;
+ }
 }
-    
+
+@mixin tablet {
+    @media screen and (min-width:768px) and (max-width: 1023px){
+        .carousel{
+            display: none;
+        } 
+    }   
+}  
 
 @mixin desktop {
     @media screen and (min-width:1024px){
-        .inicio__container{
-            grid-template-columns:repeat(4,$col);
-        }
-        
         .menu__divisor{
             height: $margen-min/2 !important;width: $ancho-menu;
             background: #ffffff;
@@ -19,6 +25,12 @@
             background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
         }
+        .inicio__container{
+            grid-template-columns:repeat(4,$col);
+        }
+        .carousel{
+            display: none;
+        }               
 
         .flexVideos {
             display: flex; height: 200px;width: 80vw;

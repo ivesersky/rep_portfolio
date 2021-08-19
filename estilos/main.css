@@ -41,50 +41,83 @@
   transition: 0.3s;
 }
 
-/*CAROUSEL ESTILO,COLOR,FUENTE*/
-.carousel .carousel__container {
-  margin-bottom: 2rem;
+/*CAROUSEL ESTILO,COLOR,FUENTE
+
+
+.carousel{
+    .carousel__container{
+        
+        margin-bottom: $margen-max/3;
+    }
+    &__bgr{
+        
+        background: $blanco-tte;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.424) 0%, rgba(0, 0, 0, 0) 100%);
+        border-radius: $margen-min - 6px;
+        
+        .carousel__title{
+            font-family: $font-bold-ep;
+            color:$blanco-tte;
+            text-align: center;
+        }
+        figcaption{
+            font-family: $font-epigraf;
+            font-size: $font-sz-epigraf;
+            color:$blanco;
+            font-weight: thin;
+            text-align: center;
+        }
+    }
+
+    .carousel__bgr--light{
+        background: $blanco;
+        background: linear-gradient(0deg, $blanco-tte 0%, $tte 100%);
+        .carousel__title{
+            font-family: $font-bold-ep;
+            color:$marron-tte;
+            text-align: center;
+        }
+        figcaption{
+            font-family: $font-epigraf;
+            font-size: $font-sz-epigraf;
+            color:$marron-tte;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+*/
+.card-columns {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.carousel__bgr {
-  background: rgba(255, 254, 252, 0.842);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.424)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.424) 0%, rgba(0, 0, 0, 0) 100%);
-  border-radius: 4px;
+.card-columns .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  margin: 1rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
-.carousel__bgr .carousel__title {
-  font-family: "PT Serif", serif;
-  color: rgba(255, 254, 252, 0.842);
-  text-align: center;
-}
-
-.carousel__bgr figcaption {
-  font-family: "Quicksand", sans-serif;
-  font-size: 10px;
-  color: #fffefc;
-  font-weight: thin;
-  text-align: center;
-}
-
-.carousel .carousel__bgr--light {
-  background: #fffefc;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 254, 252, 0.842)), to(rgba(255, 254, 252, 0)));
-  background: linear-gradient(0deg, rgba(255, 254, 252, 0.842) 0%, rgba(255, 254, 252, 0) 100%);
-}
-
-.carousel .carousel__bgr--light .carousel__title {
+.card-columns .card-title {
   font-family: "PT Serif", serif;
   color: #1d1616ce;
   text-align: center;
-}
-
-.carousel .carousel__bgr--light figcaption {
-  font-family: "Quicksand", sans-serif;
-  font-size: 10px;
-  color: #1d1616ce;
-  font-weight: bold;
-  text-align: center;
+  font-size: 24px;
 }
 
 .round-borders {

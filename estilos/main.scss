@@ -2,6 +2,8 @@
 @import "./partials/variables";
 @import "./partials/carousel";
 @import "./partials/media-queries";
+@import "./partials/videos";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -24,7 +26,6 @@ body{
         color: $marron-claro;
         font-size: $size-titulo;
         text-align: start;
-        
     }
     &__container{
         display: grid;
@@ -38,7 +39,6 @@ body{
         }
         &__img{
          max-width: $ancho-img;
-         
         }
     }
 }

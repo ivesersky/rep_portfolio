@@ -2,15 +2,10 @@
  .menu__divisor{
      visibility: hidden;
  }
- .flexVideos {
-    display: flex; height: 500px;
-    flex-flow: row wrap; 
-    justify-content: space-between;
-}
 }
     
 
-@mixin tablet {
+@mixin desktop {
     @media screen and (min-width:1024px){
         .inicio__container{
             grid-template-columns:repeat(4,$col);
@@ -23,6 +18,14 @@
             background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
             background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+        }
+
+        .flexVideos {
+            display: flex; height: 200px;width: 80vw;
+            flex-direction: row; 
+            justify-content: space-between;
+            margin: 2rem;
+            flex-basis: 80vw;
         }
     }
 }

@@ -1,0 +1,10 @@
+/*_________PROYECTOS.HTML_________*/
+.flexVideos{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;align-items: center;
+    margin: 30px;
+    flex-grow: 1;
+    flex-basis: 390px;
+}

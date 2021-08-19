@@ -91,6 +91,35 @@
   border-radius: 6px;
 }
 
+@media screen and (max-width: 768px) {
+  .menu__divisor {
+    visibility: hidden;
+  }
+}
+
+/*_________PROYECTOS.HTML_________*/
+.flexVideos {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 390px;
+      flex-basis: 390px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -104,14 +133,6 @@ body {
   margin: 1rem;
 }
 
-.menu__divisor {
-  height: 5px !important;
-  width: 90%;
-  background: #ffffff;
-  background: radial-gradient(circle, #fffefc 0%, #646464 0%, #fffefc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-}
-
 .inicio__titulo {
   margin: 1.5rem 40px auto;
   font-family: "Volkhov", serif;
@@ -123,8 +144,8 @@ body {
 .inicio__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-gap: 1rem;
   margin: 1.5rem;
 }
@@ -133,6 +154,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -216,23 +241,5 @@ body {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .inicio__container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .flexVideos {
-    height: 50vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 2rem;
   }
 }

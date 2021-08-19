@@ -1,0 +1,14 @@
+@mixin tablet {
+    @media screen and (max-width:768px){
+        .inicio__container{
+            grid-template-columns:repeat(4,$col);
+        }
+        .flexVideos {
+            display: flex; height: 500px;
+            flex-flow: row wrap; 
+            justify-content: space-between;
+        }
+    }
+}
+
+

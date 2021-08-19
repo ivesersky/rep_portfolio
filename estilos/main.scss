@@ -1,0 +1,104 @@
+@import "./partials/fuentes";
+@import "./partials/variables";
+@import "./partials/carousel";
+@import "./partials/media-queries";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: $color-body;
+}
+.menu{
+ &__desplegable{
+    margin: $margen-max/6;
+ }
+ &__divisor{
+    height: $margen-min/2 !important;width: $ancho-menu;
+    background: #ffffff;
+    background: -moz-radial-gradient(circle, $blanco 0%, rgba(100, 100, 100, 1) 0%, $blanco  100%);
+    background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+    background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+ }
+}
+
+.inicio{
+    &__titulo{
+        margin: $margen-max/4 $margen-min*4 auto;
+        font-family:$font-indexTitle;
+        color: $marron-claro;
+        font-size: $size-titulo;
+        text-align: start;
+        
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: $col;
+        grid-gap: $margen-max/6;
+        margin: $margen-max/4;
+        &__item{
+            display: flex; flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+        }
+        &__img{
+         max-width: $ancho-img;
+         
+        }
+    }
+}
+
+.galeriaFlotante{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    margin: 1rem ;
+   
+    &__pic{
+        display: flex;
+        text-decoration: none;
+        padding: 10px;
+        width: 20%;
+       
+        border-radius: 4px;
+    }
+ 
+}
+
+.pie{
+    margin: $margen-min*2 $margen-min*2 ;
+     &__flex{
+         list-style: none;
+         display: flex;
+         flex-flow: row wrap;
+         height: $margen-max/6; width: $ancho-img - 20px;
+         justify-content: space-evenly;align-items: center;
+         padding: $margen-min $margen-min*2;
+     }
+     /*.icon-black{
+        color: $color-base-icn;
+     }
+     .icon-black:hover{
+          color: $color-hover-icn;
+          transition: 0.3s;
+     }*/
+}
+
+
+/**************************/
+
+/*******Animaciones********/
+
+@keyframes animate__fadeInLeft{
+    
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+

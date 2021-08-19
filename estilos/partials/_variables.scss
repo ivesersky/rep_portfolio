@@ -1,0 +1,43 @@
+$blanco:rgb(255,254,252);
+$blanco-tte:rgba(255, 254, 252, 0.842);
+$tte:rgba(255, 254, 252, 0);
+$color-body:#ffffff;
+$marron-claro:#50361f;
+$marron-tte:#1d1616ce;
+$color-hover-btn:#e7dcd7ea;
+$color-base-icn:#858383c4; /*iconos del footer*/
+$color-hover-icn: #000000b7;
+
+
+$ancho-menu:90%;
+$ancho-img:240px;
+$margen-min:10px;
+$margen-max:6rem;
+
+$col:1fr;
+$fila:1fr;
+
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+
+$redes: (
+ instagram:#ce1d58d5,
+ behance: #0338e6bb,
+ linkedin: #2866b2d2,
+ email:#7f0edbbb
+);
+
+@each $red, $color in $redes{
+    
+    .icono--#{$red}{
+        color: $color-base-icn;
+    }
+    .icono--#{$red}:hover{
+        color: $color;
+        transition: 0.3s;
+    }
+}
+

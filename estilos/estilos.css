@@ -1,0 +1,132 @@
+
+
+/* Botones genericos no del nav, contacto los usa*/
+.btnGenerales {
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(75, 81, 88);
+    cursor: pointer;
+    color: rgb(246, 246, 246) ;
+    border-radius: 4px;
+    opacity: 1;
+    transition: 00.3s;
+}
+.btnContacto div a:hover:not(.active) {
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 4px;
+    background-color:rgba(251, 162, 110, 0.568);
+    color: white;
+}
+.btnContacto .active {
+    border-radius: 4px;
+    background-color: rgba(251, 162, 110, 0.568);
+    color: white;
+}
+
+
+/*___________PERFIL.HTML__________*/
+/*   Caja Perfil Izq   */
+.grilla-perfil{
+    display: grid;
+    grid-template-areas: 
+    "cajaPerfil flexFotoPerfil"
+    "galeriaFlotante flexFotoPerfil"
+    "galeriaFlotante flexFotoPerfil"
+    "pie pie";
+    grid-template-columns:45% 55%;
+    grid-template-rows:  1fr 3fr 1fr;
+    height: 100vh;width: auto;
+    grid-row-gap: 20px;
+}
+header{
+    grid-area: header;
+}
+section.cajaPerfil{
+    grid-area: cajaPerfil;
+}
+section.galeriaFlotante{
+    grid-area: galeriaFlotante;
+}
+section.flexFotoPerfil{
+    grid-area: flexFotoPerfil;
+}
+footer.pie{
+    grid-area:pie;
+}
+.flexFotoPerfil{
+    margin:0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:flex-start;
+}
+.flexFotoPerfil img{
+    width:60vw;
+    
+}
+.cajaPerfil{
+    margin: 20px;
+    padding:1rem;
+    height: 50vh;width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content:center;
+    flex-wrap: wrap;
+}
+.cajaPerfil h1{
+    font-size: 120px ;
+    color: darkslategrey;
+    font-family: 'Volkhov', serif;
+}
+.cajaPerfil p {
+    color: rgb(22, 22, 22);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
+}
+
+
+/*_________PROYECTOS.HTML_________*/
+.flexVideos{
+    width: 100vw;height: auto;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;align-items: center;
+    margin: 2rem;
+}
+.flexVideos{
+  max-width: 80vw;
+}
+
+
+/*__________CONTACTO.HTML_________*/
+
+.boxContacto{
+    margin: 80px 40px 10px 40px;
+}
+.datosContacto p{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.datosContacto img{
+    float: left;
+    width: 1.5%;
+    height: 1.5%;
+}
+.formulario{
+    width: 300px;
+    border: none;
+    background-color: rgba(255, 248, 239, 0.514);
+    border-radius: 4px;
+    color:rgb(28, 39, 13);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*______fin css contacto.html_____*/
+

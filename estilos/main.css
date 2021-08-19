@@ -42,7 +42,7 @@
 }
 
 /*CAROUSEL ESTILO,COLOR,FUENTE*/
-.carousel {
+.carousel .carousel__container {
   margin-bottom: 2rem;
 }
 
@@ -94,9 +94,6 @@
 @media screen and (max-width: 767px) {
   .menu__divisor {
     visibility: hidden;
-  }
-  .card {
-    display: none;
   }
 }
 

@@ -2,7 +2,10 @@
 
 
 .carousel{
-    margin-bottom: $margen-max/3;
+    .carousel__container{
+        
+        margin-bottom: $margen-max/3;
+    }
     &__bgr{
         
         background: $blanco-tte;

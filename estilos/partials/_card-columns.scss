@@ -54,12 +54,19 @@
         flex-grow: 3;
         margin: 1rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+        .card-title{
+          font-family: $font-bold-ep;
+          color:$marron-tte;
+          text-align: center;
+          font-size: 24px;
+        }
+        .card-text{
+
+        }
     }
-    .card-title{
-      font-family: $font-bold-ep;
-      color:$marron-tte;
-      text-align: center;
-      font-size: 24px;
+    .card-bg{
+        width: 10rem;
+        background-color: rgba(218, 218, 218, 0.295);
     }
 }
 

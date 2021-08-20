@@ -113,11 +113,16 @@
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
-.card-columns .card-title {
+.card-columns .card .card-title {
   font-family: "PT Serif", serif;
   color: #1d1616ce;
   text-align: center;
   font-size: 24px;
+}
+
+.card-columns .card-bg {
+  width: 10rem;
+  background-color: rgba(218, 218, 218, 0.295);
 }
 
 .round-borders {

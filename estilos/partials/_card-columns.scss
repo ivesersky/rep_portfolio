@@ -1,0 +1,75 @@
+/*CAROUSEL ESTILO,COLOR,FUENTE
+
+
+.carousel{
+    .carousel__container{
+        
+        margin-bottom: $margen-max/3;
+    }
+    &__bgr{
+        
+        background: $blanco-tte;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.424) 0%, rgba(0, 0, 0, 0) 100%);
+        border-radius: $margen-min - 6px;
+        
+        .carousel__title{
+            font-family: $font-bold-ep;
+            color:$blanco-tte;
+            text-align: center;
+        }
+        figcaption{
+            font-family: $font-epigraf;
+            font-size: $font-sz-epigraf;
+            color:$blanco;
+            font-weight: thin;
+            text-align: center;
+        }
+    }
+
+    .carousel__bgr--light{
+        background: $blanco;
+        background: linear-gradient(0deg, $blanco-tte 0%, $tte 100%);
+        .carousel__title{
+            font-family: $font-bold-ep;
+            color:$marron-tte;
+            text-align: center;
+        }
+        figcaption{
+            font-family: $font-epigraf;
+            font-size: $font-sz-epigraf;
+            color:$marron-tte;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+*/
+.card-columns{
+    margin: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+     justify-content: space-evenly;
+    .card{
+        display: flex;
+        flex-grow: 3;
+        margin: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+        .card-title{
+          font-family: $font-bold-ep;
+          color:$marron-tte;
+          text-align: center;
+          font-size: 24px;
+        }
+        
+    }
+    .card-bg{
+        width: 10rem;
+        background-color: rgba(218, 218, 218, 0.295);
+    }
+}
+
+
+
+.round-borders{
+    border-radius: $margen-min - 4px;
+}

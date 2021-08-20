@@ -1,7 +1,9 @@
 @import "./partials/fuentes";
 @import "./partials/variables";
-@import "./partials/carousel";
+@import "./partials/card-columns";
 @import "./partials/media-queries";
+@import "./partials/videos";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,14 +16,6 @@ body{
  &__desplegable{
     margin: $margen-max/6;
  }
- &__divisor{
-    height: $margen-min/2 !important;width: $ancho-menu;
-    background: #ffffff;
-    background: -moz-radial-gradient(circle, $blanco 0%, rgba(100, 100, 100, 1) 0%, $blanco  100%);
-    background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
-    background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
- }
 }
 
 .inicio{
@@ -31,7 +25,6 @@ body{
         color: $marron-claro;
         font-size: $size-titulo;
         text-align: start;
-        
     }
     &__container{
         display: grid;
@@ -45,7 +38,6 @@ body{
         }
         &__img{
          max-width: $ancho-img;
-         
         }
     }
 }

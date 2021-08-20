@@ -1,5 +1,5 @@
 
-
+/*PARA RAMA_VERSION3 QUITAR ESTE ESTILOS.CSS Y TRANSFORMARLO EN SASS*/
 /* Botones genericos no del nav, contacto los usa*/
 .btnGenerales {
     padding: 10px 20px;
@@ -90,17 +90,7 @@ footer.pie{
 }
 
 
-/*_________PROYECTOS.HTML_________*/
-.flexVideos{
-    width: 100vw;height: auto;
-    display: flex;
-    flex-direction: column ;
-    justify-content: space-evenly;align-items: center;
-    margin: 2rem;
-}
-.flexVideos{
-  max-width: 80vw;
-}
+
 
 
 /*__________CONTACTO.HTML_________*/

@@ -1,14 +1,46 @@
+@media screen and (max-width: 767px){
+ .menu__divisor{
+     visibility: hidden;
+ }
+
+}
+
 @mixin tablet {
-    @media screen and (max-width:768px){
+    @media screen and (min-width:768px) and (max-width: 1023px){
+        .card-columns {
+            @include media-breakpoint-only(lg) {
+              column-count: 4;
+            }
+            @include media-breakpoint-only(xl) {
+              column-count: 5;
+            }
+          }  
+    }   
+}  
+
+@mixin desktop {
+    @media screen and (min-width:1024px){
+        .menu__divisor{
+            height: $margen-min/2 !important;width: $ancho-menu;
+            background: #ffffff;
+            background: -moz-radial-gradient(circle, $blanco 0%, rgba(100, 100, 100, 1) 0%, $blanco  100%);
+            background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+            background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+        }
         .inicio__container{
             grid-template-columns:repeat(4,$col);
-        }
+        }           
+
         .flexVideos {
-            display: flex; height: 500px;
-            flex-flow: row wrap; 
+            display: flex; height: 200px;width: 80vw;
+            flex-direction: row; 
             justify-content: space-between;
+            margin: 2rem;
+            flex-basis: 80vw;
         }
     }
 }
+
 
 

@@ -6,7 +6,7 @@
 .menu-light{
     color: blanchedalmond;
 }
-.grilla-perfil{
+.grilla-perfil{ /*REEMPLAZAR ESTO SACAR GRID*/
     display: grid;
     grid-template-areas: 
     "cajaPerfil flexFotoPerfil";
@@ -33,6 +33,7 @@ section.flexFotoPerfil{
 .flexFotoPerfil img{
     width:250px;
     border-radius: 220px;
+    flex-grow: 1;
 }
 .cajaPerfil{
     margin: 8rem 2rem 1rem;

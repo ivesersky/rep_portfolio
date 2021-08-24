@@ -7,10 +7,7 @@
 
 @mixin tablet {
     @media screen and (min-width:768px) and (max-width: 1023px){
-        .flexFotoPerfil img{
-            width:450px;
-            border-radius: 60px;
-        }
+        
         .card-columns {
             @include media-breakpoint-only(lg) {
               column-count: 4;
@@ -24,7 +21,14 @@
 
 @mixin desktop {
     @media screen and (min-width:1024px){
-        
+        .flexFotoPerfil {
+            width:50vw;height: 50vh;
+            border-radius: 60px;
+        }
+        .cajaPerfil{
+            margin-top: 2rem ; 
+            height: 100vh;width: 60vw;
+        }
         .menu__divisor{
             height: $margen-min/2 !important;width: $ancho-menu;
             background: #ffffff;

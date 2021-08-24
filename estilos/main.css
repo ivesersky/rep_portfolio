@@ -178,6 +178,7 @@
 }
 
 .grilla-perfil {
+  /*REEMPLAZAR ESTO SACAR GRID*/
   display: -ms-grid;
   display: grid;
       grid-template-areas: "cajaPerfil flexFotoPerfil";
@@ -218,6 +219,9 @@ section.flexFotoPerfil {
 .flexFotoPerfil img {
   width: 250px;
   border-radius: 220px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .cajaPerfil {

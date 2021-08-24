@@ -7,7 +7,9 @@
 
 @mixin tablet {
     @media screen and (min-width:768px) and (max-width: 1023px){
-        
+        .inicio__titulo{
+            font-size: $size-titulo;
+        }
         .card-columns {
             @include media-breakpoint-only(lg) {
               column-count: 4;
@@ -21,6 +23,15 @@
 
 @mixin desktop {
     @media screen and (min-width:1024px){
+        .inicio__container{
+            display: grid;
+            grid-template-columns: repeat(4,20px);
+            grid-gap: $margen-max/6;
+            margin: $margen-max/4;
+            &__img{
+                max-width: 20px;
+            }
+        }
         .flexFotoPerfil {
             width:50vw;height: 50vh;
             border-radius: 60px;

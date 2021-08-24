@@ -22,10 +22,10 @@ body{
 
 .inicio{
     &__titulo{
-        margin: $margen-max/4 $margen-min*4 auto;
+        margin: $margen-max/4 $margen-min*4 ;
         font-family:$font-indexTitle;
         color: $marron-claro;
-        font-size: $size-titulo;
+        font-size: 48px;
         text-align: start;
     }
     &__container{
@@ -44,8 +44,6 @@ body{
     }
 }
 
-
-
 .pie{
     margin: $margen-min*2 $margen-min*2 ;
      &__flex{
@@ -59,8 +57,6 @@ body{
 
 }
 
-
-/**************************/
 
 /*******Animaciones********/
 

@@ -29,61 +29,6 @@
 }
 
 
-/*___________PERFIL.HTML__________*/
-/*   Caja Perfil Izq   */
-.dark-bgr{
-    background-color: rgb(41, 42, 42);
-}
-.menu-light{
-    color: blanchedalmond;
-}
-.grilla-perfil{
-    display: grid;
-    grid-template-areas: 
-    "cajaPerfil flexFotoPerfil";
-    grid-template-columns:60% 40%;
-    height: 70vh;width: auto;
-    grid-row-gap: 20px;
-}
-
-section.cajaPerfil{
-    grid-area: cajaPerfil;
-}
-
-section.flexFotoPerfil{
-    grid-area: flexFotoPerfil;
-}
-
-.flexFotoPerfil{
-    margin:8rem 20px 2rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items:center
-}
-.flexFotoPerfil img{
-    width:35vw;
-    border-radius: 120px;
-}
-.cajaPerfil{
-    margin: 8rem 2rem 20px;
-    padding:20px;
-    height: 40vh;width: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.cajaPerfil h1{
-    font-size: 80px ;
-    color: rgb(255, 240, 228);
-    font-family: 'Volkhov', serif;
-}
-.cajaPerfil p {
-    color: rgb(241, 241, 241);
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
-}
-
 
 
 /*__________CONTACTO.HTML_________*/

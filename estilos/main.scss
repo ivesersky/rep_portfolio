@@ -21,25 +21,30 @@ body{
 }
 
 .inicio{
+    display: flex;
+    flex-flow: row wrap;
+    flex-shrink: 2;
     &__titulo{
         margin: $margen-max/4 $margen-min*4 ;
         font-family:$font-indexTitle;
         color: $marron-claro;
-        font-size: 48px;
+        font-size: 10rem;
         text-align: start;
     }
     &__container{
         display: grid;
-        grid-template-columns: $col;
+        width: 80vw;
+        grid-template-columns:repeat(4,1fr);
         grid-gap: $margen-max/6;
         margin: $margen-max/4;
         &__item{
-            display: flex; flex-direction: row;
-            justify-content: space-between;
+            display: flex; flex-flow: row wrap;
+            justify-content: space-evenly;
             align-items: center; 
         }
-        &__img{
-         max-width: $ancho-img;
+        img{
+            width: $ancho-img;
+            border-radius: 80px;
         }
     }
 }

@@ -31,11 +31,12 @@ section.flexFotoPerfil{
     align-items:center;
 }
 .flexFotoPerfil img{
-    width:250px;
+    width:250px;height: auto;
     border-radius: 220px;
     flex-grow: 1;
 }
 .cajaPerfil{
+    shape-outside: url(/img/fotoperfil.jpg);
     margin: 8rem 2rem 1rem;
     padding:20px;
     height: 40vh;width: 40vw;
@@ -45,13 +46,16 @@ section.flexFotoPerfil{
     flex-wrap: wrap;
 }
 .cajaPerfil h1{
-    font-size: 80px ;
+    padding-bottom: 5rem;
+    font-size: 120px ;
     color: rgb(255, 240, 228);
-    font-family: 'Volkhov', serif;
+    font-family: 'Casual';
 }
 .cajaPerfil p {
+    
     color: rgb(241, 241, 241);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
+   
 }
 

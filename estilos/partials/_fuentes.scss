@@ -1,7 +1,21 @@
 /*esto es para EL TITULO DEL INDEX*/
-$font-indexTitle:'Volkhov',serif;
+$font-indexTitle:'Casual';
 $size-titulo:5rem;
 /*esto es para EL EPIGRAFE DE IMG GALERIA antes figcaption*/
 $font-epigraf: 'Quicksand', sans-serif;
 $font-sz-epigraf: 10px;
 $font-bold-ep:'PT Serif', serif;
+
+@font-face {
+    font-family: 'Casual';
+    src: url('Casual-Regular.eot');
+    src: url('Casual-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Casual-Regular.woff2') format('woff2'),
+        url('Casual-Regular.woff') format('woff'),
+        url('Casual-Regular.ttf') format('truetype'),
+        url('Casual-Regular.svg#Casual-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

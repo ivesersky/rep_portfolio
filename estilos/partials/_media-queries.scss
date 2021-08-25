@@ -10,6 +10,11 @@
         .inicio__titulo{
             font-size: $size-titulo*2;
         }
+        .grilla-perfil{
+            @include media-breakpoint-only(lg) {
+                column-count: 4;
+              }
+        }
         .card-columns {
             @include media-breakpoint-only(lg) {
               column-count: 4;

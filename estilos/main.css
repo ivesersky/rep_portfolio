@@ -50,6 +50,18 @@
   transition: 0.3s;
 }
 
+.dark-bgr {
+  background-color: #292a2a;
+}
+
+.dark-bgr2 {
+  background-color: #292a2a;
+}
+
+.menu-light {
+  color: blanchedalmond;
+}
+
 .card-columns {
   margin: 2rem;
   display: -webkit-box;
@@ -130,43 +142,25 @@
       flex-basis: 390px;
 }
 
+iframe {
+  border-radius: 10%;
+}
+
 /*___________PERFIL.HTML__________*/
 /*   Caja Perfil Izq   */
-.dark-bgr {
-  background-color: #292a2a;
-}
-
-.menu-light {
-  color: blanchedalmond;
-}
-
 .grilla-perfil {
   /*REEMPLAZAR ESTO SACAR GRID*/
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "cajaPerfil flexFotoPerfil";
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
-  height: 80vh;
-  width: auto;
+  -ms-grid-rows: 4fr;
+      grid-template-rows: 4fr;
+  height: 100vh;
+  width: 100vw;
   grid-row-gap: 20px;
 }
 
-section.cajaPerfil {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: cajaPerfil;
-}
-
-section.flexFotoPerfil {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: flexFotoPerfil;
-}
-
 .flexFotoPerfil {
-  margin: 4rem 20px 2rem;
-  height: 4rem;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,20 +174,14 @@ section.flexFotoPerfil {
 }
 
 .flexFotoPerfil img {
-  width: 250px;
-  height: auto;
+  width: 150px;
   border-radius: 220px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .cajaPerfil {
-  shape-outside: url(/img/fotoperfil.jpg);
-  margin: 8rem 2rem 1rem;
-  padding: 20px;
-  height: 40vh;
-  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,23 +189,21 @@ section.flexFotoPerfil {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .cajaPerfil h1 {
-  padding-bottom: 5rem;
-  font-size: 120px;
+  font-size: 80px;
   color: #fff0e4;
   font-family: 'Casual';
 }
 
 .cajaPerfil p {
+  word-break: keep-all;
   color: #f1f1f1;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
 }
 

@@ -8,7 +8,7 @@
 @mixin tablet {
     @media screen and (min-width:768px) and (max-width: 1023px){
         .inicio__titulo{
-            font-size: $size-titulo;
+            font-size: $size-titulo*2;
         }
         .card-columns {
             @include media-breakpoint-only(lg) {
@@ -23,15 +23,30 @@
 
 @mixin desktop {
     @media screen and (min-width:1024px){
-        .inicio__container{
-            display: grid;
-            grid-template-columns: repeat(4,20px);
-            grid-gap: $margen-max/6;
-            margin: $margen-max/4;
-            &__img{
-                max-width: 20px;
+        .menu__divisor{
+            height: $margen-min/2 ;width: 100vw;
+            background: #ffffff;
+            background: -moz-radial-gradient(circle, $blanco 0%, rgba(100, 100, 100, 1) 0%, $blanco  100%);
+            background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+            background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+        }  
+        .inicio{
+            height: 90vh;
+            &__titulo{
+                font-size: $size-titulo*4;
             }
-        }
+
+            &__container{
+                display: grid;
+                grid-template-columns: repeat(4,20px);
+                grid-gap: $margen-max/6;
+                margin: $margen-max/4;
+                .inicio__img{
+                    max-width: 20px;
+                }
+            }
+        }        
         .flexFotoPerfil {
             width:50vw;height: 50vh;
             border-radius: 60px;
@@ -40,17 +55,6 @@
             margin-top: 2rem ; 
             height: 100vh;width: 60vw;
         }
-        .menu__divisor{
-            height: $margen-min/2 !important;width: $ancho-menu;
-            background: #ffffff;
-            background: -moz-radial-gradient(circle, $blanco 0%, rgba(100, 100, 100, 1) 0%, $blanco  100%);
-            background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
-            background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-        }
-        .inicio__container{
-            grid-template-columns:repeat(4,$col);
-        }           
 
         .flexVideos {
             display: flex; height:auto;width: 80vw;

@@ -239,26 +239,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -ms-flex-negative: 2;
       flex-shrink: 2;
 }
 
 .inicio__titulo {
-  margin: 1.5rem 40px;
+  margin: 1.5rem 20px;
   font-family: "Casual";
   color: #50361f;
-  font-size: 10rem;
+  font-size: 4rem;
   text-align: start;
 }
 
 .inicio__container {
   display: -ms-grid;
   display: grid;
-  width: 80vw;
+  width: 70vw;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
@@ -273,9 +273,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

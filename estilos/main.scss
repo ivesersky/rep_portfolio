@@ -22,24 +22,24 @@ body{
 
 .inicio{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-shrink: 2;
     &__titulo{
-        margin: $margen-max/4 $margen-min*4 ;
+        margin: $margen-max/4 $margen-min*2;
         font-family:$font-indexTitle;
         color: $marron-claro;
-        font-size: 10rem;
+        font-size: $size-titulo;
         text-align: start;
     }
     &__container{
         display: grid;
-        width: 80vw;
+        width: 70vw;
         grid-template-columns:repeat(4,1fr);
         grid-gap: $margen-max/6;
         margin: $margen-max/4;
         &__item{
             display: flex; flex-flow: row wrap;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center; 
         }
         img{

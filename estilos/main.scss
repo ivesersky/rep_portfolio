@@ -25,7 +25,7 @@ body{
 .inicio{
     display: flex;
     flex-flow: column wrap;
-    flex-shrink: 2;
+    
     &__titulo{
         margin: $margen-max/4 $margen-min*2;
         font-family:$font-indexTitle;

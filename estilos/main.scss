@@ -23,17 +23,18 @@ body{
 }
 
 .inicio{
+    width: 100vw;
     display: flex;
     flex-flow: column wrap;
-    margin: $margen-min*2;
+    margin: 4rem;
     &__titulo{
-        
-        font-family:$font-indexTitle;
+        font-family:$font-Casual;
         color: $marron-claro;
         font-size: 3.5rem;
         text-align: start;
     }
     &__container{
+        margin: 2rem;
         display: grid;
         width: 70vw;
         grid-template-columns:repeat(4,1fr);

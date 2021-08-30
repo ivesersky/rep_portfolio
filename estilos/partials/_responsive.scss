@@ -1,0 +1,63 @@
+@include media-mobile{
+    .menu__divisor{
+        visibility: hidden;
+    }
+}
+
+@include media-tablet{
+    .inicio__titulo{
+        font-size: $size-titulo*2;
+    }
+
+    .card-columns {
+        @include media-breakpoint-only(lg) {
+          column-count: 4;
+        }
+        @include media-breakpoint-only(xl) {
+          column-count: 5;
+        }
+      } 
+}
+
+@include media-desktop{
+    .menu__divisor{
+        height: $margen-min/2 ;width: 100vw;
+        background: #ffffff;
+        background: -moz-radial-gradient(circle, $blanco 0%, rgba(100, 100, 100, 1) 0%, $blanco  100%);
+        background: -webkit-radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+        background: radial-gradient(circle, $blanco 0%, rgba(100,100, 100,1) 0%, $blanco 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    }  
+    .inicio{
+        height: 90vh;
+        &__titulo{
+            font-size: $size-titulo*4;
+        }
+
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(4,20px);
+            grid-gap: $margen-max/6;
+            margin: $margen-max/4;
+            .inicio__img{
+                max-width: 20px;
+            }
+        }
+    }        
+    .flexFotoPerfil {
+        width:50vw;height: 50vh;
+        border-radius: 60px;
+    }
+    .cajaPerfil{
+        margin-top: 2rem ; 
+        height: 100vh;width: 60vw;
+    }
+
+    .flexVideos {
+        display: flex; height:auto;width: 80vw;
+        flex-direction: row; 
+        justify-content: space-between;
+        margin: 2rem;
+        flex-basis: 80vw;
+    }
+}

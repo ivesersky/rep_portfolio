@@ -100,8 +100,8 @@
 }
 
 .card-columns .card:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card-columns .card-bg {
@@ -111,12 +111,6 @@
 
 .round-borders {
   border-radius: 6px;
-}
-
-@media screen and (max-width: 767px) {
-  .menu__divisor {
-    visibility: hidden;
-  }
 }
 
 /*_________PROYECTOS.HTML_________*/
@@ -129,8 +123,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -205,6 +200,12 @@ iframe {
   color: #f1f1f1;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__divisor {
+    visibility: hidden;
+  }
 }
 
 * {

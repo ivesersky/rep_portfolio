@@ -5,18 +5,22 @@
 }
 
 @include media-tablet{
-    .inicio__titulo{
-        font-size: $size-titulo*2;
+    .inicio{
+        .inicio__titulo{
+            h1{
+                font-size: $size-titulo*2;
+            }
+        }
+        .inicio__container{
+            width: 70vw;
+            img{
+                border-radius: 80px;
+            }
+           } 
+               
     }
 
-    .card-columns {
-        @include media-breakpoint-only(lg) {
-          column-count: 4;
-        }
-        @include media-breakpoint-only(xl) {
-          column-count: 5;
-        }
-      } 
+     
 }
 
 @include media-desktop{
@@ -29,20 +33,17 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
     }  
     .inicio{
-        height: 90vh;
-        &__titulo{
-            font-size:  6rem;
-        }
-
-        &__container{
-            display: grid;
-            grid-template-columns: repeat(4,20px);
-            grid-gap: $margen-max/6;
-            margin: $margen-max/4;
-            .inicio__img{
-                max-width: 20px;
+        .inicio__titulo{
+            h1{
+             font-size: $size-titulo*2.5;
             }
         }
+        .inicio__container{
+           width: 75vw;
+           .inicio__item{align-items: center;}
+           img{width: 80%;}
+        }
+        
     }        
     .flexFotoPerfil {
         width:50vw;height: 50vh;

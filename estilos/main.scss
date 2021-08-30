@@ -23,44 +23,49 @@ body{
 }
 
 .inicio{
-    width: 100vw;
+    width: 90vw; height: 70vh;
     display: flex;
     flex-flow: column wrap;
-    margin: 4rem;
+    margin: 1rem;
     &__titulo{
-        font-family:$font-Casual;
-        color: $marron-claro;
-        font-size: 3.5rem;
-        text-align: start;
+        
+        h1{
+            font-family:$font-Casual;
+            color: $marron-claro;
+            font-size:$size-titulo;font-weight: bold;
+            text-align: start;
+            padding-bottom:20px;
+        }
+
     }
     &__container{
-        margin: 2rem;
         display: grid;
-        width: 70vw;
+        width: 80vw;
         grid-template-columns:repeat(4,1fr);
         grid-gap: $margen-max/6;
+        
         
         &__item{
             display: flex; flex-flow: row wrap;
             justify-content: space-between;
-            align-items: center; 
         }
         img{
             width: $ancho-img;
-            border-radius: 80px;
+            border-radius: 100px;
+            
         }
     }
 }
 
 .pie{
-    margin: $margen-min*2 $margen-min*2 ;
+    margin: $margen-min  ;
      &__flex{
          list-style: none;
          display: flex;
          flex-flow: row wrap;
-         height: $margen-max/6; width: $ancho-img - 20px;
-         justify-content: space-evenly;align-items: center;
-         padding: $margen-min $margen-min*2;
+         height: $margen-max/4; width: $ancho-img - 20px;
+         justify-content: space-between;align-items: left;
+          
      }
 
 }

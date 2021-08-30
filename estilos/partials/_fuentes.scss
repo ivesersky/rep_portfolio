@@ -1,6 +1,6 @@
 /*esto es para EL TITULO DEL INDEX*/
 $font-Casual:'Casual';
-$size-titulo:24px;
+$size-titulo:3.5rem;
 /*esto es para EL EPIGRAFE DE IMG GALERIA antes figcaption*/
 $font-epigraf: 'Quicksand', sans-serif;
 $font-sz-epigraf: 10px;
@@ -14,7 +14,7 @@ $font-bold-ep:'PT Serif', serif;
         url('Casual-Regular.woff') format('woff'),
         url('Casual-Regular.ttf') format('truetype'),
         url('Casual-Regular.svg#Casual-Regular') format('svg');
-    font-weight: normal;
+    
     font-style: normal;
     font-display: swap;
 }

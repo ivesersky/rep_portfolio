@@ -246,7 +246,7 @@ body {
   display: -ms-grid;
   display: grid;
   width: 70vw;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   margin: 1.5rem;

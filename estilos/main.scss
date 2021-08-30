@@ -25,9 +25,9 @@ body{
 .inicio{
     display: flex;
     flex-flow: column wrap;
-    
+    margin: $margen-min*2;
     &__titulo{
-        margin: $margen-max/4 $margen-min*2;
+        
         font-family:$font-indexTitle;
         color: $marron-claro;
         font-size: 3.5rem;
@@ -38,7 +38,7 @@ body{
         width: 70vw;
         grid-template-columns:repeat(4,1fr);
         grid-gap: $margen-max/6;
-        margin: $margen-max/4;
+        
         &__item{
             display: flex; flex-flow: row wrap;
             justify-content: space-between;

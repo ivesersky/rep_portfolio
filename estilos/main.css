@@ -235,7 +235,7 @@ body {
 }
 
 .inicio__titulo {
-  margin: 1.5rem 20px;
+  margin: 20px;
   font-family: "Casual";
   color: #50361f;
   font-size: 4rem;
@@ -249,7 +249,7 @@ body {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  margin: 1.5rem;
+  
 }
 
 .inicio__container__item {

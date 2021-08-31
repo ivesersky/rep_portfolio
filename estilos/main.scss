@@ -15,6 +15,11 @@
 body{
     background-color: $color-body;
     height: 100vh;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .menu{
  &__desplegable{
@@ -32,7 +37,8 @@ body{
         h1{
             font-family:$font-Casual;
             color: $marron-claro;
-            font-size:$size-titulo;font-weight: bold;
+            font-size:$size-titulo !important;
+            font-weight: bold !important;
             text-align: start;
             padding-bottom:20px;
         }
@@ -40,20 +46,25 @@ body{
     }
     &__container{
         display: grid;
-        width: 80vw;
-        grid-template-columns:repeat(4,1fr);
+        height: 50vh;width: 80vw;
+        grid-template-columns:repeat(2,1fr) ;
+        grid-template-rows:repeat(2,1fr);
         grid-gap: $margen-max/6;
-        
+        align-self:center;
         
         &__item{
             display: flex; flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: space-around;align-content: center;
         }
         img{
-            width: $ancho-img;
+            width: 80%;
             border-radius: 100px;
-            
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+            transition: transform 1.5s;
         }
+    }
+    .inicio__item img:hover{
+        transform: scale(1.02);
     }
 }
 

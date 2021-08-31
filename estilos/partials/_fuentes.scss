@@ -9,10 +9,10 @@ $font-bold-ep:'PT Serif', serif;
 @font-face {
     font-family: 'Casual';
     src: url('Casual-Regular.eot');
-    src: url('Casual-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Casual-Regular.woff2') format('woff2'),
-        url('Casual-Regular.woff') format('woff'),
-        url('Casual-Regular.ttf') format('truetype'),
+    src: url('Casual-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('Casual-Regular.woff2') format('woff2');
+    src: url('Casual-Regular.woff') format('woff');
+    src: url('Casual-Regular.ttf') format('truetype'),
         url('Casual-Regular.svg#Casual-Regular') format('svg');
     
     font-style: normal;

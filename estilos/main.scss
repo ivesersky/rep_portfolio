@@ -58,7 +58,7 @@ body{
 }
 
 .pie{
-    margin: $margen-min  ;
+    margin-top: $margen-min  ;
      &__flex{
          list-style: none;
          display: flex;

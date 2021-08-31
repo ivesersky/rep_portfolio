@@ -11,9 +11,9 @@ $font-bold-ep:'PT Serif', serif;
     src: url('Casual-Regular.eot');
     src: url('Casual-Regular.eot?#iefix') format('embedded-opentype');
     src: url('Casual-Regular.woff2') format('woff2');
-    src: url('Casual-Regular.woff') format('woff');
-    src: url('Casual-Regular.ttf') format('truetype'),
-        url('Casual-Regular.svg#Casual-Regular') format('svg');
+    src: local('Casual-Regular.woff') format('woff');
+    src: local('Casual-Regular.ttf') format('truetype');
+    src:    url('Casual-Regular.svg#Casual-Regular') format('svg');
     
     font-style: normal;
     font-display: swap;

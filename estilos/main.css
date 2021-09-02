@@ -347,6 +347,38 @@
   }
 }
 
+.btnGenerales {
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #4b5158;
+  cursor: pointer;
+  color: #f6f6f6;
+  border-radius: 4px;
+  opacity: 1;
+  -webkit-transition: 00.3s;
+  transition: 00.3s;
+}
+
+.btnContacto div a:hover:not(.active) {
+  text-decoration: none;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 4px;
+  background-color: rgba(251, 162, 110, 0.568);
+  color: white;
+}
+
+.btnContacto .active {
+  border-radius: 4px;
+  background-color: rgba(251, 162, 110, 0.568);
+  color: white;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -434,6 +466,11 @@ body::-webkit-scrollbar {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   text-align: center;
+}
+
+.contact-form {
+  width: 90vw;
+  margin: 20px;
 }
 
 .pie {

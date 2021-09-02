@@ -5,7 +5,7 @@
 @import "./partials/videos";
 @import "./partials/imagenes";
 @import "./partials/responsive";
-
+@import "./partials/formulario";
 
 *{
     margin: 0px;
@@ -74,7 +74,10 @@ body::-webkit-scrollbar {
         }
     }
 }
-
+.contact-form{
+    width: 90vw;
+    margin: $margen-min*2;
+}
 .pie{
     display: flex;
     margin-top: $margen-min;

@@ -53,36 +53,64 @@
            <hr class="menu__divisor  animate__animated animate__slideInLeft animate__slow">
     </header>
 
-      <section>
+      <section class="animate__animated animate__fadeInLeft animate__slow">
           <div class="boxContacto">
              <section><!--H2 y datosContacto-->
                     <h2>Ponte en contacto conmigo!</h2>
                     <div class="datosContacto">
-                        <img src="./img/logoLocation.png" alt="logo ubicacion">
+                      <img class="img-fluid" src="./img/logoTelefono.png" alt="logo Telefono">
+                      <p>(+54) 011 5746 2663</p>
+                        <img class="img-fluid" src="./img/logoLocation.png" alt="logo ubicacion">
                         <p>Ciudad Autónoma de Buenos Aires, Argentina.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1625598785244!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" loading="lazy"></iframe>
-                        <img src="./img/logoTelefono.png" alt="logo Telefono">
-                        <p>(+54) 011 5746 2663</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1625598785244!5m2!1ses-419!2sar" width="200" height="150" loading="lazy"></iframe>
                     </div>
              </section>
              
              <section><!--FORMULARIO-->
-                    <form  action="#" method="GET" enctype="multipart/form-data">
+                    <form  class="row g-3" action="#" method="GET" enctype="multipart/form-data">
                         <fieldset class="formulario">
-                            <div>
-                                <label for="nombre"></label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                          <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationDefault01" value=" " required>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationDefault02" value=" " required>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                            <div class="input-group">
+                              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
                             </div>
-                            <section><!--btnContacto-->
-                                <div class="btnContacto">
-                                    <div>
-                                        <label for="userMail"></label>
-                                        <input type="email" name="userMail" id="correo" placeholder="Deje su email aqui" required>
-                                    </div>
-                                    <div>
-                                        <label for="comments"></label>
-                                        <textarea name="comments" id="" cols="35" rows="8" placeholder="Coloque aqui su comentario"></textarea>
-                                    </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationDefault03" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="validationDefault03" required>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="validationDefault04" class="form-label">País</label>
+                            <select class="form-select" id="validationDefault04" required>
+                              <option selected disabled value="">Elegir...</option>
+                              <option>Argentina</option>
+                              <option>Brasil</option>
+                              <option>Uruguay</option>
+                              <option>Chile</option>
+                              <option>Otro</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="validationDefault05" class="form-label">Código postal</label>
+                            <input type="text" class="form-control" id="validationDefault05" required>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                              <label class="form-check-label" for="invalidCheck2">
+                                Acepto los Términos y condiciones de Privacidad
+                              </label>
+                            </div>
+                          </div>
                                     <div>
                                         <a href="#" value="Enviar" class="btnGenerales">Enviar</a>
                                         <a href="#" value="Limpiar" class="btnGenerales">Limpiar</a>
@@ -96,7 +124,7 @@
                     </form>
              </section>
           </div>
-      </section>
+       </section>
 
                <!--FOOTER-->
           <footer class="pie">

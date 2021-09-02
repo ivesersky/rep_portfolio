@@ -33,16 +33,14 @@ body::-webkit-scrollbar {
     flex-flow: column nowrap;
     margin: 1rem 0.5rem ;
     &__titulo h1{
-         margin: $margen-min;
-         font-family:$font-Yeseva;
-         color: $marron-claro;
-         font-size:$size-titulo !important;
-         font-weight: bold !important;
-         text-align: center;
-      
+     margin: $margen-min;
+     font-family:$font-Yeseva;
+     color: $marron-claro;
+     font-size:$size-titulo !important;
+     font-weight: bold !important;
+     text-align: center;
     }
     &__container{
-        margin-top: $margen-min;
         display: grid;
         height: 20px;width: 80vw;
         grid-template-columns:repeat(2,1fr) ;
@@ -51,7 +49,7 @@ body::-webkit-scrollbar {
         align-self:center;
         img{
          margin: $margen-min;
-         height: 50%;
+         width: 60%;
          border-radius: 50%;            
          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
          transition: transform 1.2s;
@@ -61,11 +59,16 @@ body::-webkit-scrollbar {
         }
 
     }
-    &__figcap p{
+    &__figcap {
+        display: flex;
+        align-self: flex-end;
+        height:6rem ;
         margin: $margen-min*2;
-        font-family: $font-Raleway;
-        font-size: $sz-figcap;
-        text-align: center;
+        figcaption{
+         font-family: $font-Raleway;
+         font-size: $sz-figcap;
+         text-align: center;
+        }
     }
 }
 

@@ -197,7 +197,7 @@
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin: 10px;
+  margin: 20px;
 }
 
 .grilla-perfil .cajaPerfil h1 {
@@ -227,9 +227,9 @@
     height: 90vh;
     margin: 10px;
   }
-  .inicio__titulo h1 {
+  .inicio .inicio__titulo h1 {
     text-align: left;
-    font-size: 10.5rem !important;
+    font-size: 7rem !important;
   }
   .inicio .inicio__container {
     width: 90vw;
@@ -243,12 +243,11 @@
             align-items: left;
   }
   .inicio .inicio__container img {
-    height: 50%;
+    width: 60%;
   }
   .grilla-perfil {
     width: 100%;
     height: 70vh;
-        grid-template-areas: "cajaPerfil fotoPerfil";
     -ms-grid-columns: 250px 1fr;
         grid-template-columns: 250px 1fr;
     margin: 10px;
@@ -269,9 +268,6 @@
   .grilla-perfil .cajaPerfil h1 {
     font-size: 14vw;
     margin-bottom: 20px;
-  }
-  .grilla-perfil .cajaPerfil p {
-    text-align: right;
   }
   .flexVideos {
     -webkit-box-orient: horizontal;
@@ -298,6 +294,8 @@
   }
   .inicio .inicio__titulo h1 {
     font-size: 10.5rem !important;
+    text-align: left;
+    margin-left: 30px;
   }
   .inicio .inicio__container {
     width: 90vw;
@@ -311,13 +309,12 @@
             align-items: left;
   }
   .inicio .inicio__container img {
-    width: 65%;
+    width: 75%;
     border-radius: 80px;
   }
   .grilla-perfil {
     width: 100vw;
     height: 75vh;
-        grid-template-areas: "cajaPerfil fotoperfil";
     -ms-grid-columns: 2fr 3fr;
         grid-template-columns: 2fr 3fr;
     -ms-grid-rows: 1fr;
@@ -398,7 +395,6 @@ body::-webkit-scrollbar {
 }
 
 .inicio__container {
-  margin-top: 10px;
   display: -ms-grid;
   display: grid;
   height: 20px;
@@ -414,7 +410,7 @@ body::-webkit-scrollbar {
 
 .inicio__container img {
   margin: 10px;
-  height: 50%;
+  width: 60%;
   border-radius: 50%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
@@ -429,8 +425,17 @@ body::-webkit-scrollbar {
           transform: scale(1.2);
 }
 
-.inicio__figcap p {
+.inicio__figcap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 6rem;
   margin: 20px;
+}
+
+.inicio__figcap figcaption {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   text-align: center;

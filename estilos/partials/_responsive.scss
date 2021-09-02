@@ -11,9 +11,9 @@
         width: 70vw;
         height: 90vh;
         margin: $margen-min;
-        &__titulo h1{
+        .inicio__titulo h1{
          text-align: left;
-         font-size: $size-titulo*3 !important;
+         font-size: $size-titulo*2 !important;
             
         }
         .inicio__container{
@@ -22,7 +22,7 @@
             grid-template-rows: 2fr;
             align-items: left;
             img{
-                height: 50%;
+             width: 60%;
             }
         }         
      
@@ -30,8 +30,6 @@
     .grilla-perfil{
         width: 100%;
         height: 70vh;
-        grid-template-areas: 
-        "cajaPerfil fotoPerfil";
         grid-template-columns: 250px 1fr;
         margin: $margen-min;
         .fotoPerfil img{
@@ -46,9 +44,6 @@
             h1{
                font-size: 14vw;
                margin-bottom: 20px;
-           }
-           p {
-              text-align:right;   
            }
         }
     } 
@@ -72,10 +67,10 @@
     }  
     .inicio{
      height: 100vh;
-        .inicio__titulo{
-         h1{
+        .inicio__titulo h1{
           font-size: $size-titulo*3 !important;
-         }
+          text-align: left;
+          margin-left: $margen-min*3;
         }
         .inicio__container{
          width: 90vw; height: 20vh;
@@ -83,7 +78,7 @@
          grid-template-rows: 2fr;
          align-items: left;
          img{
-          width: 65%;
+          width: 75%;
           border-radius: 80px;
          }
         } 
@@ -91,8 +86,6 @@
     .grilla-perfil{
         width: 100vw;
         height: 75vh;
-        grid-template-areas: 
-        "cajaPerfil fotoperfil";
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 1fr;
         .fotoPerfil{

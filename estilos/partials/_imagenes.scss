@@ -23,9 +23,9 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        margin: 10px;
+        margin: $margen-min*2;
         h1{
-            margin-bottom: $margen-min*2;
+           margin-bottom: $margen-min*2;
            font-size: 80px ;
            color: rgb(255, 240, 228);
            font-family: 'Casual';

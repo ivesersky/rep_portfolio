@@ -1,3 +1,5 @@
+
+
 @include media-mobile{
     .menu__divisor{
         visibility: hidden;
@@ -8,10 +10,11 @@
     .inicio{
         width: 70vw;
         height: 90vh;
-        .inicio__titulo{
-            h1{
-                font-size: $size-titulo*2 !important;
-            }
+        margin: $margen-min;
+        &__titulo h1{
+         text-align: left;
+         font-size: $size-titulo*3 !important;
+            
         }
         .inicio__container{
             width: 90vw; height: 20vh;
@@ -19,21 +22,22 @@
             grid-template-rows: 2fr;
             align-items: left;
             img{
-                width: 80%;
-                border-radius: 80px;
+                height: 50%;
             }
         }         
+     
     }
     .grilla-perfil{
         width: 100%;
         height: 70vh;
         grid-template-areas: 
-        "cajaPerfil flexfotoperfil";
+        "cajaPerfil fotoPerfil";
         grid-template-columns: 250px 1fr;
         margin: $margen-min;
         .fotoPerfil img{
             height:315px;
-            margin-top: 40px;  
+            margin-top: 30px;
+            border-radius: 10%;  
         }
         .cajaPerfil{
             flex-direction: column;
@@ -45,7 +49,7 @@
            }
            p {
               text-align:right;   
-          }
+           }
         }
     } 
     .flexVideos {
@@ -69,48 +73,49 @@
     .inicio{
      height: 100vh;
         .inicio__titulo{
-            h1{
-             font-size: $size-titulo*3 !important;
-            }
+         h1{
+          font-size: $size-titulo*3 !important;
+         }
         }
-        
         .inicio__container{
-            width: 90vw; height: 20vh;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: 2fr;
-            align-items: left;
-            img{
-                width: 75%;
-                border-radius: 80px;
-            }
+         width: 90vw; height: 20vh;
+         grid-template-columns: repeat(4,1fr);
+         grid-template-rows: 2fr;
+         align-items: left;
+         img{
+          width: 65%;
+          border-radius: 80px;
+         }
         } 
     }  
     .grilla-perfil{
         width: 100vw;
         height: 75vh;
         grid-template-areas: 
-        "cajaPerfil flexfotoperfil";
+        "cajaPerfil fotoperfil";
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 1fr;
         .fotoPerfil{
-            height: 30%;
+            margin: $margen-min;
+            height:415px;;
             img{
-               height: 550px;
-               border-radius: 150px;
+               height: 500px;
+               border-radius: 3%;
            }
         }
         .cajaPerfil{
             text-align: right;
-            margin: $margen-min 6rem 40px 20px;
+            margin: $margen-min 2rem 40px 20px;
             h1{
                font-size: 10vw;
            }
            p{
-               margin-left: 200px;
+               margin-left: $margen-min;
                text-align: right;
            }
         }
-    }    
+    }   
+   
     .flexVideos {
         flex-flow: row wrap; 
         height: 90vh;

@@ -23,60 +23,64 @@ body::-webkit-scrollbar {
 }
 .menu{
  &__desplegable{
-    margin: $margen-max/6;
+    margin: $margen-max/4;
  }
 }
 
 .inicio{
-    width: 90vw; height: 70vh;
+    width: 94vw; height: 70vh;
     display: flex;
-    flex-flow: column wrap;
-    margin: 1rem;
-    &__titulo{
-        
-        h1{
-            font-family:$font-Casual;
-            color: $marron-claro;
-            font-size:$size-titulo !important;
-            font-weight: bold !important;
-            text-align: start;
-            padding-bottom:20px;
+    flex-flow: column nowrap;
+    margin: 1rem 0.5rem ;
+    &__titulo h1{
+         margin: $margen-min;
+         font-family:$font-Yeseva;
+         color: $marron-claro;
+         font-size:$size-titulo !important;
+         font-weight: bold !important;
+         text-align: center;
+      
+    }
+    &__container{
+        margin-top: $margen-min;
+        display: grid;
+        height: 20px;width: 80vw;
+        grid-template-columns:repeat(2,1fr) ;
+        grid-template-rows:repeat(2,1fr);
+        grid-gap: $margen-min;
+        align-self:center;
+        img{
+         margin: $margen-min;
+         height: 50%;
+         border-radius: 50%;            
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+         transition: transform 1.2s;
+        }
+        img:hover{
+         transform: scale(1.2);
         }
 
     }
-    &__container{
-        display: grid;
-        height: 50vh;width: 80vw;
-        grid-template-columns:repeat(2,1fr) ;
-        grid-template-rows:repeat(2,1fr);
-        grid-gap: $margen-max/6;
-        align-self:center;
-        
-        &__item{
-            display: flex; flex-flow: row wrap;
-            justify-content: space-around;align-content: center;
-        }
-        img{
-            width: 80%;
-            border-radius: 100px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-            transition: transform 1.5s;
-        }
-    }
-    .inicio__item img:hover{
-        transform: scale(1.02);
+    &__figcap p{
+        margin: $margen-min*2;
+        font-family: $font-Raleway;
+        font-size: $sz-figcap;
+        text-align: center;
     }
 }
 
 .pie{
-    margin-top: $margen-min  ;
+    display: flex;
+    margin-top: $margen-min;
+    width:99vw;
      &__flex{
+         width: 99vw;
          list-style: none;
          display: flex;
          flex-flow: row wrap;
-         height: $margen-max/4; width: $ancho-img - 20px;
-         justify-content: space-between;align-items: left;
-          
+         height: $margen-max/2; width: $ancho-img - 20px;
+         justify-content: space-around;
+         align-items: center;
      }
 
 }

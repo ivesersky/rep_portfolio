@@ -1,5 +1,7 @@
 /*esto es para EL TITULO DEL INDEX*/
 /*esto es para EL EPIGRAFE DE IMG GALERIA antes figcaption*/
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @font-face {
   font-family: 'Casual';
   src: url("Casual-Regular.eot");
@@ -154,8 +156,10 @@
   -ms-grid-rows: 1fr 4fr;
       grid-template-rows: 1fr 4fr;
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   grid-row-gap: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .grilla-perfil .fotoPerfil {
@@ -177,7 +181,7 @@
 
 .grilla-perfil .fotoPerfil img {
   height: 200px;
-  border-radius: 220px;
+  border-radius: 20%;
   -webkit-box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.212);
           box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.212);
 }
@@ -197,6 +201,7 @@
 }
 
 .grilla-perfil .cajaPerfil h1 {
+  margin-bottom: 20px;
   font-size: 80px;
   color: #fff0e4;
   font-family: 'Casual';
@@ -220,9 +225,11 @@
   .inicio {
     width: 70vw;
     height: 90vh;
+    margin: 10px;
   }
-  .inicio .inicio__titulo h1 {
-    font-size: 7rem !important;
+  .inicio__titulo h1 {
+    text-align: left;
+    font-size: 10.5rem !important;
   }
   .inicio .inicio__container {
     width: 90vw;
@@ -236,20 +243,20 @@
             align-items: left;
   }
   .inicio .inicio__container img {
-    width: 80%;
-    border-radius: 80px;
+    height: 50%;
   }
   .grilla-perfil {
     width: 100%;
     height: 70vh;
-        grid-template-areas: "cajaPerfil flexfotoperfil";
+        grid-template-areas: "cajaPerfil fotoPerfil";
     -ms-grid-columns: 250px 1fr;
         grid-template-columns: 250px 1fr;
     margin: 10px;
   }
   .grilla-perfil .fotoPerfil img {
     height: 315px;
-    margin-top: 40px;
+    margin-top: 30px;
+    border-radius: 10%;
   }
   .grilla-perfil .cajaPerfil {
     -webkit-box-orient: vertical;
@@ -304,34 +311,35 @@
             align-items: left;
   }
   .inicio .inicio__container img {
-    width: 75%;
+    width: 65%;
     border-radius: 80px;
   }
   .grilla-perfil {
     width: 100vw;
     height: 75vh;
-        grid-template-areas: "cajaPerfil flexfotoperfil";
+        grid-template-areas: "cajaPerfil fotoperfil";
     -ms-grid-columns: 2fr 3fr;
         grid-template-columns: 2fr 3fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
   }
   .grilla-perfil .fotoPerfil {
-    height: 30%;
+    margin: 10px;
+    height: 415px;
   }
   .grilla-perfil .fotoPerfil img {
-    height: 550px;
-    border-radius: 150px;
+    height: 500px;
+    border-radius: 3%;
   }
   .grilla-perfil .cajaPerfil {
     text-align: right;
-    margin: 10px 6rem 40px 20px;
+    margin: 10px 2rem 40px 20px;
   }
   .grilla-perfil .cajaPerfil h1 {
     font-size: 10vw;
   }
   .grilla-perfil .cajaPerfil p {
-    margin-left: 200px;
+    margin-left: 10px;
     text-align: right;
   }
   .flexVideos {
@@ -368,76 +376,76 @@ body::-webkit-scrollbar {
 }
 
 .inicio {
-  width: 90vw;
+  width: 94vw;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  margin: 1rem;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 1rem 0.5rem;
 }
 
 .inicio__titulo h1 {
-  font-family: "Casual";
+  margin: 10px;
+  font-family: "Yeseva One", cursive;
   color: #50361f;
   font-size: 3.5rem !important;
   font-weight: bold !important;
-  text-align: start;
-  padding-bottom: 20px;
+  text-align: center;
 }
 
 .inicio__container {
+  margin-top: 10px;
   display: -ms-grid;
   display: grid;
-  height: 50vh;
+  height: 20px;
   width: 80vw;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 10px;
   -ms-grid-row-align: center;
       align-self: center;
 }
 
-.inicio__container__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .inicio__container img {
-  width: 80%;
-  border-radius: 100px;
+  margin: 10px;
+  height: 50%;
+  border-radius: 50%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
-  transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
 }
 
-.inicio .inicio__item img:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+.inicio__container img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.inicio__figcap p {
+  margin: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 10px;
+  width: 99vw;
 }
 
 .pie__flex {
+  width: 99vw;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,14 +454,13 @@ body::-webkit-scrollbar {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  height: 1.5rem;
+  height: 2rem;
   width: 220px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*******Animaciones********/

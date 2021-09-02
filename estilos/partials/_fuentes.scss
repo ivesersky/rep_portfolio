@@ -1,10 +1,17 @@
 /*esto es para EL TITULO DEL INDEX*/
 $font-Casual:'Casual';
 $size-titulo:3.5rem;
+$font-Elsie:'Elsie', cursive;
+$font-Yeseva:'Yeseva One', cursive;
+$font-Raleway: 'Raleway', sans-serif;
 /*esto es para EL EPIGRAFE DE IMG GALERIA antes figcaption*/
 $font-epigraf: 'Quicksand', sans-serif;
-$font-sz-epigraf: 10px;
+$sz-figcap: 1rem;
 $font-bold-ep:'PT Serif', serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 @font-face {
     font-family: 'Casual';
@@ -18,5 +25,3 @@ $font-bold-ep:'PT Serif', serif;
     font-style: normal;
     font-display: swap;
 }
-
-

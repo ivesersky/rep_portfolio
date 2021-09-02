@@ -148,9 +148,7 @@
 }
 
 /*___________PERFIL.HTML__________*/
-/*   Caja Perfil Izq   */
 .grilla-perfil {
-  /*REEMPLAZAR ESTO SACAR GRID*/
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 4fr;
@@ -222,11 +220,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .inicio {
-    width: 70vw;
-    height: 90vh;
-    margin: 10px;
-  }
   .inicio .inicio__titulo h1 {
     text-align: left;
     font-size: 7rem !important;
@@ -243,7 +236,8 @@
             align-items: left;
   }
   .inicio .inicio__container img {
-    width: 60%;
+    width: 80%;
+    border-radius: 17%;
   }
   .grilla-perfil {
     width: 100%;
@@ -291,11 +285,12 @@
   }
   .inicio {
     height: 100vh;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
   }
   .inicio .inicio__titulo h1 {
     font-size: 10.5rem !important;
     text-align: left;
-    margin-left: 30px;
   }
   .inicio .inicio__container {
     width: 90vw;
@@ -309,8 +304,8 @@
             align-items: left;
   }
   .inicio .inicio__container img {
-    width: 75%;
-    border-radius: 80px;
+    width: 80%;
+    border-radius: 10%;
   }
   .grilla-perfil {
     width: 100vw;
@@ -373,20 +368,19 @@ body::-webkit-scrollbar {
 }
 
 .inicio {
-  width: 94vw;
-  height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  margin: 1rem 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  width: 99vw;
+  grid-row-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .inicio__titulo h1 {
-  margin: 10px;
   font-family: "Yeseva One", cursive;
   color: #50361f;
   font-size: 3.5rem !important;
@@ -397,20 +391,21 @@ body::-webkit-scrollbar {
 .inicio__container {
   display: -ms-grid;
   display: grid;
-  height: 20px;
+  margin: 10px;
   width: 80vw;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-  -ms-grid-row-align: center;
-      align-self: center;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .inicio__container img {
-  margin: 10px;
-  width: 60%;
+  width: 80%;
   border-radius: 50%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
@@ -421,8 +416,8 @@ body::-webkit-scrollbar {
 }
 
 .inicio__container img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
 }
 
 .inicio__figcap {
@@ -431,7 +426,7 @@ body::-webkit-scrollbar {
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  height: 6rem;
+  height: 3rem;
   margin: 20px;
 }
 
@@ -451,21 +446,19 @@ body::-webkit-scrollbar {
 
 .pie__flex {
   width: 99vw;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
   height: 2rem;
   width: 220px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-row: 1;
+  grid-row: 1fr;
+  grid-gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*******Animaciones********/

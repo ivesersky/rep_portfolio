@@ -28,41 +28,44 @@ body::-webkit-scrollbar {
 }
 
 .inicio{
-    width: 94vw; height: 70vh;
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 1rem 0.5rem ;
-    &__titulo h1{
-     margin: $margen-min;
-     font-family:$font-Yeseva;
-     color: $marron-claro;
-     font-size:$size-titulo !important;
-     font-weight: bold !important;
-     text-align: center;
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr;
+    width:99vw;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    &__titulo {
+     h1{
+      font-family:$font-Yeseva;
+      color: $marron-claro;
+      font-size:$size-titulo !important;
+      font-weight: bold !important;
+      text-align: center;
+     }
     }
     &__container{
-        display: grid;
-        height: 20px;width: 80vw;
+        display: grid; margin: $margen-min;
+        width: 80vw; 
         grid-template-columns:repeat(2,1fr) ;
         grid-template-rows:repeat(2,1fr);
-        grid-gap: $margen-min;
-        align-self:center;
+        grid-gap: $margen-min*2;
+        align-items: center;
+        justify-items: center;
         img{
-         margin: $margen-min;
-         width: 60%;
+         width: 80%;
          border-radius: 50%;            
          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
          transition: transform 1.2s;
         }
         img:hover{
-         transform: scale(1.2);
+         transform: scale(1.12);
         }
 
     }
     &__figcap {
         display: flex;
         align-self: flex-end;
-        height:6rem ;
+        height:3rem ;
         margin: $margen-min*2;
         figcaption{
          font-family: $font-Raleway;
@@ -76,14 +79,16 @@ body::-webkit-scrollbar {
     display: flex;
     margin-top: $margen-min;
     width:99vw;
+    
      &__flex{
          width: 99vw;
-         list-style: none;
-         display: flex;
-         flex-flow: row wrap;
          height: $margen-max/2; width: $ancho-img - 20px;
-         justify-content: space-around;
-         align-items: center;
+         list-style: none;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         grid-row: 1fr;
+         grid-gap:$margen-min;
+         justify-content: space-between;
      }
 
 }

@@ -8,9 +8,6 @@
 
 @include media-tablet{
     .inicio{
-        width: 70vw;
-        height: 90vh;
-        margin: $margen-min;
         .inicio__titulo h1{
          text-align: left;
          font-size: $size-titulo*2 !important;
@@ -22,7 +19,8 @@
             grid-template-rows: 2fr;
             align-items: left;
             img{
-             width: 60%;
+             width: 80%;
+             border-radius: 17%;
             }
         }         
      
@@ -67,10 +65,10 @@
     }  
     .inicio{
      height: 100vh;
+     grid-template-rows:repeat(3,1fr);
         .inicio__titulo h1{
           font-size: $size-titulo*3 !important;
           text-align: left;
-          margin-left: $margen-min*3;
         }
         .inicio__container{
          width: 90vw; height: 20vh;
@@ -78,8 +76,8 @@
          grid-template-rows: 2fr;
          align-items: left;
          img{
-          width: 75%;
-          border-radius: 80px;
+          width: 80%;
+          border-radius: 10%;
          }
         } 
     }  

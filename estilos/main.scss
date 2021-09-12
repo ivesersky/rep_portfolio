@@ -5,7 +5,6 @@
 @import "./partials/videos";
 @import "./partials/imagenes";
 @import "./partials/responsive";
-@import "./partials/formulario";
 
 *{
     margin: 0px;
@@ -36,7 +35,7 @@ body::-webkit-scrollbar {
     justify-items: center;
     &__titulo {
      h1{
-      font-family:$font-Yeseva;
+      font-family:$font-Yeseva, $font-Elsie;
       color: $marron-claro;
       font-size:$size-titulo !important;
       font-weight: bold !important;
